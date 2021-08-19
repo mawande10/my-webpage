@@ -1,0 +1,300 @@
+@import url('https:font.googleapis.com/css2?family=Handlee&display=swap');
+
+  .flag-IT {
+    background-position: -37px -444px;
+  }
+  
+body {
+    font-family: Handlee;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: overlay;
+    overflow-x: hidden;
+    display: flex;
+}
+
+a { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: black; }
+a:hover { text-decoration: none; color: black; }
+a:focus { text-decoration: none; color: black; }
+a:hover, a:active { text-decoration: none; color: black; }
+
+.nav {
+    background-color:#FFFFFF;
+    height: auto;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.nav a {
+    color:bisque;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+  
+  .nav a:hover {
+    color: #000000;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    animation: ease;
+}
+
+
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(149, 165, 166, 0.7);   
+  border-radius: 25px;   
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(211, 211, 211, 0.9);
+  border: 1px solid black; 
+}
+
+/* ===== Flex Box ===== */
+
+.flexcontain {
+    transform: translateY(10%);
+}
+
+.bg {
+    position: relative;
+    background-image: url("table-mountain.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 177vh;
+    margin: 0;
+    padding: 0;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+h2 {
+  padding-left: 2.5rem;
+}
+
+.me {
+    object-fit:round;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+    text-align: right;
+    flex: 1;
+    display: inline-grid;
+}
+
+.intro {
+    text-align: center;
+}
+
+.name {
+    position: relative;
+    flex: 1;
+    display: inline-grid;
+    bottom: 150px;
+    padding-right: 2.5em;
+}
+
+.city {
+  text-align: center;
+  display: flex;
+}
+
+.city_name {
+    flex: 2;
+    right: 5em;
+    padding: 1rem;
+}
+
+.nap_img {
+    flex: 1;
+    left: 5em;
+    text-align: right;
+    padding: 1rem;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+tr{
+  background-color: rgba(211, 211, 211, 0.7);
+}
+
+#tableHead {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.historic {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.histname {
+  text-align: center;
+  padding-top: 0;
+}
+
+.place_1 {
+    flex: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.place_1:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.place_2 {
+    flex: 1;
+}
+
+.place_2:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.place_3 {
+    flex: 1;
+}
+
+.place_3:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.histimg {
+    text-align: center;
+    padding: 0;
+}
+
+.histinfo {
+    text-align: left;
+    margin: 0.5em;
+}
+
+.footer {
+    text-align: center;
+}
+
+.which_city:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+}
+
+@media only screen and (max-height: 768px){
+  .bg {
+    height: 246vh;
+  }
+}
+
+@media only screen and (min-width: 30em) {  /* 540px */
+
+.name {
+    bottom: 0px;
+    left: 10px;
+    padding-bottom: 0;
+    height: 50px;
+}
+
+.city_name {
+    bottom: 250px;
+    left: 180px;
+}
+
+.nap_img {
+    display: inline-grid;
+
+}
+
+h2 {
+  left: 10px;
+  margin: 0.1%;
+}
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .name {
+    bottom: 10px;
+    left: 10px;
+}
+
+.city_name {
+    bottom: 200px;
+    left: 0px;
+}
+
+.nap_img {
+    display: inline-grid;
+
+}
+
+h2 {
+  left: 10px;
+  margin: 0.1%;
+}
+}
+
+@media only screen and (min-width: 46.4em) {  /* 720px */
+  .name {
+    bottom: 150px;
+    left: 18px;
+}
+
+.city_name {
+    bottom: 200px;
+    left: 0px;
+}
+
+.nap_img {
+    display: inline-grid;
+
+}
+
+h2 {
+  left: 10px;
+  margin: 0.1%;
+}
+}
